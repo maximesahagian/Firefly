@@ -1,4 +1,4 @@
 # Firefly
 Firefly Game Javascript using Jquery and Phaser libraries.
 
-Thx Alex and Veronique in this project.
+Thank's to Alexandre, Veronique, Julien and Regis for working on it too.
