@@ -1,0 +1,659 @@
+@font-face{
+  font-family: "Selya";
+  src: url('../fonts/Selya.ttf');
+}
+
+@font-face{
+  font-family: "Raleway";
+  src: url('../fonts/Raleway-ExtraLight.ttf');
+}
+
+@font-face{
+  font-family: "Raleway-SemiBold";
+  src: url('../fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face{
+  font-family: "Balqis";
+  src: url('../fonts/Balqis.otf');
+}
+
+@font-face{
+  font-family: "Gotham";
+  src: url('../fonts/GOTHAM-BOLD.ttf');
+}
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+body{
+  background-color: #000;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#body_jeu{
+  background-color: #000;
+  /*background-image: none !important;*/
+}
+
+#body_pages{
+  background-color: #fff;
+  background-image: none !important;
+}
+
+#wrap{
+  background-image: url('../images/background_header.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+header,
+#le_personnage,
+#les_planetes,
+#les_lucioles,
+#meilleur_score{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+header h1{
+  font-family: "Selya";
+  font-size: 260px;
+  color: #fff;
+  text-align: center;
+  padding-top: 90px;
+}
+
+header hr{
+  width: 90px;
+  margin-top: 90px;
+  border: none;
+  background-color: #fff;
+  height: 1px;
+}
+
+p{
+  font-family: "Raleway";
+  font-size: 15px;
+  color: #dedede;
+  line-height: 22px;
+  font-weight: 100;
+  word-spacing: 1px;
+}
+
+header p,
+#les_planetes h3,
+#les_planetes h2,
+#les_planetes p,
+.center,
+#meilleur_score h2,
+#meilleur_score h3{
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3,
+#les_planetes ul li{
+  font-family: "Raleway-SemiBold";
+  color: #53a5cb;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+h2{
+  color:#53a5cb;
+  font-family: "Balqis";
+  font-size: 40px;
+  padding-top:100px;
+}
+
+#game_over{
+  color:#53a5cb;
+  font-family: "Raleway";
+  font-size: 22px;
+  padding-top:100px;
+}
+
+#all_h2{
+  color: #fff !important;
+  padding-top: 0px !important;
+}
+
+#les_planetes,
+#le_personnage{
+  margin-top: 400px;
+}
+
+#les_planetes img{
+  margin: 0 auto;
+  width: 920px;
+  display: block;
+  margin-top: 150px;
+}
+
+#les_planetes ul{
+  margin-top: 70px;
+}
+
+#les_planetes ul li{
+  list-style-type: none;
+  display: inline;
+}
+
+#li_1{
+  margin-left: 150px;
+}
+
+#li_2{
+  margin-left: 216px;
+}
+
+#li_3{
+  margin-left: 305px;
+}
+
+#le_personnage h3,
+#le_personnage h2,
+#le_personnage p{
+  margin-bottom: 20px;
+}
+
+#le_personnage p{
+  width: 208px;
+  text-align: left;
+}
+
+#la_planete img{
+  float: right;
+  width: 800px;
+}
+
+#les_lucioles{
+  overflow: hidden;
+}
+
+#les_lucioles h2{
+  background-color: #000 !important;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#cadre{
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: solid 1px #fff;
+  margin-top: -20px;
+  height: 500px;
+}
+
+#barre{
+  width: 40%;
+  float: left;
+  position: relative;
+  margin-left: 10%;
+}
+
+#luciole{
+  width: 30%;
+  float: right;
+  position: relative;
+}
+
+#barre img{
+  width: 200px;
+  margin-bottom: 100px;
+  margin-top: 182px;
+}
+
+#luciole img{
+  width: 100px;
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+
+#luciole span{
+  font-family: "Gotham";
+  font-size: 26px;
+  color: #fff;
+  position: absolute;
+  left: 120px;
+  top: 180px;
+}
+
+#luciole h3,
+#barre h3{
+  margin-bottom: 20px;
+}
+
+#luciole p,
+#barre p{
+  width: 250px;
+}
+
+#meilleur_score{
+  margin-top: 400px;
+  margin-bottom: -900px;
+}
+
+#meilleur_score p{
+  font-family: "Gotham";
+  font-size: 90px;
+  text-align: center;
+  color: #53a5cb;
+  border-bottom: 2px solid #53a5cb;
+  width: 650px;
+  margin: 160px auto 0 auto;
+  padding-bottom: 40px;
+}
+
+footer img{
+  width: 100%;
+}
+
+header a{
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 20px 30px;
+  width: 150px;
+  display: block;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Raleway";
+  margin: 50px auto 0 auto;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+header a:hover{
+  border: 2px solid #53a5cb;
+  color: #53a5cb;
+  cursor: pointer;
+  font-weight: bold;
+}
+    
+/*-------------PARTIE JEU !!------------------ */
+
+#map, #popup, #score_final, #score_global{ /*-------------------------------------------------------------*/
+  display:none;
+}
+
+
+.timer {
+  position: absolute;
+  /*border:2px solid white;*/
+  font-size: 80px;
+  width: 300px;
+  height: 120px;
+  top:36%;
+  left:36%;
+  color: white;
+  z-index: 4;
+  font-family: "Raleway";
+}
+
+#canvas{
+width:1100px;
+margin: 0 auto;
+}
+
+/*#jeu button{
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 20px 30px;
+  width: 150px;
+  display: block;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Raleway";
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  z-index: 10;
+  top: 45%;
+  left: 45%;
+}*/
+
+#jeu{
+  position:relative;
+}
+
+
+#jeu button:hover{
+  border: 2px solid #53a5cb;
+  color: #53a5cb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+#header_jeu{
+  background-color: #000;
+  width: 100%;
+  height: 80px;
+  margin-top: 0px;
+}
+
+#header_jeu a{
+  color: #fff;
+  font-family: "Raleway";
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-top: 30px;
+  float: left;
+  padding-bottom: 5px;
+}
+
+#header_jeu a:hover{
+  border-bottom: 1px solid #fff;
+}
+
+
+.arrows-9:before { 
+  content: "\f10b";
+  font-family: Flaticon;
+  font-style: normal;
+  z-index: 12;
+  color: #fff;
+  margin-left: 50px;
+  margin-top: 30px;
+  float: left;
+}
+
+/*------------- END PARTIE JEU !!------------------ */
+
+.globales{
+  position:relative;
+  background-color: #000;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 1100px;
+  height: 500px;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  width:1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.globales h1{
+  font-family: "Selya";
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*.globales button{
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 9px 10px;
+  display: block;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Raleway";
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}*/
+.globales button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 9px 10px;
+  display: block;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Raleway";
+  color: #fff;
+  text-decoration: none;
+  /* text-align: center; */
+  font-weight: bold;
+  /* z-index: 3; */
+ /* position: absolute;
+  right: 36%;*/
+}
+
+#zone_timer{
+  display:none;
+}
+
+#start_game button{
+  margin: 140px auto 0 auto;
+  width: 300px;
+}
+
+#map button{
+  position: absolute;
+  margin: 20px 0px 0px 20px;
+  width: 200px;
+}
+
+.globales button:hover{
+  border: 2px solid #53a5cb;
+  color: #53a5cb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#start_game p,
+#score p, #score_global_p{
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Gotham";
+}
+
+.circles{
+  border-radius: 50%;
+  background-color: #fff; 
+  display: block;
+  float: left;
+  border: 1px solid #fff;
+}
+
+#circle_un {
+  width: 100px;
+  height: 100px;
+  margin-right: 60px;
+  margin-top: 90px;
+}
+
+#circle_deux {
+  width: 180px;
+  height: 180px;
+  margin-right: 60px;
+  margin-top: 45px;
+}
+
+#circle_trois {
+  width: 260px;
+  height: 260px;
+}
+
+#circles_center{
+  width: 670px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.none{
+  background-color: transparent !important;
+  cursor: default;
+}
+
+.planetes li{
+  color: #fff;
+  float: left;
+  font-family: "Gotham";
+  margin-top: 50px;
+}
+
+#one{
+   margin-left: 25px;
+}
+
+#two{
+   margin-left: 158px;
+}
+
+#three{
+   margin-left: 243px;
+}
+
+.name_planete{
+  font-family: "Raleway-SemiBold";
+  color: #53a5cb;
+  font-size: 10px;
+  text-transform: uppercase;
+  display: inline;
+  text-align: center;
+  margin-top: 5px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.name_planete:hover{
+  border-bottom: 1px solid #53a5cb;
+}
+
+.number_planete,
+.name_planete{
+  display: block;
+  text-align: center;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+#popup button{
+  margin: 40px auto 0 auto;
+  width: 300px;
+}
+
+#popup button:last-child{
+  margin: 40px auto 0 auto;
+  width: 300px;
+}
+
+#score_global button,
+#score_final button{
+  margin: 40px auto 0 auto;
+  width: 300px;
+}
+
+#score_final p{
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Gotham";
+}
+
+#score_final h1{
+  margin-bottom: 100px;
+}
+
+#score_total{
+  margin-top: 40px !important;
+}
+
+#score_global p{
+  margin-top: 100px;
+}
+
+#score_global form{
+  text-align: center;
+}
+#score_global input{
+  border: 2px solid #fff;
+  padding: 9px 10px;
+  color: #fff;
+  background:transparent;
+  width: 276px;
+  text-align: center;
+  font-size: 13px;
+}
+
+#score_global p{
+  margin-bottom:30px;
+}
+
+#enregistrement{
+  margin: 40px auto 0 auto;
+  width: 300px !important;
+  display:block;
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 9px 10px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+#enregistrement:hover{
+  border: 2px solid #53a5cb;
+  color: #53a5cb;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#pseudo{
+  padding:6px;
+}
+
+#bdd{
+  width:200px;
+  height:auto;
+  border:1px solid white;
+  padding:40px;
+  margin: -70px auto;
+}
+
+#bdd p{
+  color:#53a5cb;
+}
+
+
+
+
+
+
+
+
+
+
